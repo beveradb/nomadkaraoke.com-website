@@ -57,12 +57,12 @@
         <img src="logo.png" alt="Nomad Karaoke Logo" class="logo">
 
         <div class="checkout-box">
+            <script async src="https://js.stripe.com/v3/buy-button.js">
+            </script>
 
-            <script src="https://www.waitforit.me/waitlistV3.bundle.js" async></script>
-            <div id="waitforit-embed" data-project-id="a64a39f6-8c34-4308-98fe-3099b66c3268"></div>
-            <link rel="stylesheet" type="text/css" href="https://www.waitforit.me/wfiEmbedStyles.css">
-            </link>
-
+            <stripe-buy-button buy-button-id="buy_btn_1PSsZ5JqOK5vtxo4uOXEukb5"
+                publishable-key="pk_live_51PSqSrJqOK5vtxo4OQrBrUacuYnoErifT1MdphXr7zFXpQFBKzJy8JhaP6VmLZ07fnMvLRb4zrE1VOpESs50FSU800Un1vPwcW">
+            </stripe-buy-button>
         </div>
     </div>
 </body>
