@@ -22,13 +22,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
         }
 
         .container {
             width: 80%;
-            height: 100vh;
             max-width: 800px;
             text-align: center;
             border-left: 10px solid #ff7acc;
@@ -39,30 +37,54 @@
 
         .logo {
             max-width: 100%;
-            height: auto;
+            height: 40vh;
         }
 
         .checkout-box {
-            margin-top: 20px;
             padding: 20px;
-            color: #000;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .social {
+            margin-bottom: 20px;
+        }
+
+        .social img {
+            width: 150px;
+            margin: 0 20px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="logo.png" alt="Nomad Karaoke Logo" class="logo">
+        <div class="logo-container">
+            <img src="Nomad-Karaoke-Logo-TextOnly-SVG.svg" alt="Nomad Karaoke Logo" class="logo">
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com/@nomadkaraoke" target="_blank">
+                <img src="yt_logo_rgb_dark.png" alt="Follow us on YouTube">
+            </a>
+            <a href="https://www.fiverr.com/andrewthecoder/create-a-perfect-karaoke-music-video-for-any-song-you-want"
+                target="_blank">
+                <img src="fiverr-logo.svg" alt="Hire us on Fiverr" style="filter: brightness(2);">
+            </a>
+        </div>
 
         <div class="checkout-box">
+            Use the form below to commission a karaoke video of any song you want.
+
             <script async src="https://js.stripe.com/v3/buy-button.js">
             </script>
 
             <stripe-buy-button buy-button-id="buy_btn_1PSsZ5JqOK5vtxo4uOXEukb5"
                 publishable-key="pk_live_51PSqSrJqOK5vtxo4OQrBrUacuYnoErifT1MdphXr7zFXpQFBKzJy8JhaP6VmLZ07fnMvLRb4zrE1VOpESs50FSU800Un1vPwcW">
             </stripe-buy-button>
+        </div>
+
+        <div class="contact">
+            For any questions or concerns, contact Andrew: <br />
+            +1 (803) 636-3267 / andrew@beveridge.uk
         </div>
     </div>
 </body>
